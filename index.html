@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coin Strategy Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎮 Coin Strategy Game</h1>
+<p>Player vs AI — Last Coin Wins</p>
+
+<div class="panel">
+    <label>Total Coins:</label>
+    <select id="coinSelect">
+        <option>20</option>
+        <option>50</option>
+        <option>100</option>
+        <option>250</option>
+        <option>500</option>
+    </select>
+
+    <label>Mode:</label>
+    <select id="modeSelect">
+        <option value="seq">Sequence (1,2,3)</option>
+        <option value="pow">Power of 2</option>
+        <option value="fib">Fibonacci</option>
+    </select>
+
+    <button onclick="startGame()">Start Game</button>
+</div>
+
+<h2 id="status"></h2>
+<h3 id="coins"></h3>
+
+<div id="controls"></div>
+
+<div id="resultBox" class="hidden"></div>
+
+<script src="utils.js"></script>
+<script src="ai.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
